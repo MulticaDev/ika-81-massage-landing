@@ -9,10 +9,10 @@
 <meta property="og:title" content="Bali Massage — Premium Outcall Spa & Wellness in Your Villa" />
 <meta property="og:description" content="Professional outcall massage in Bali. Certified therapists bring 5-star spa treatments to your hotel or villa. 24/7 service across all Bali." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikamassage.com" />
+<meta property="og:url" content="https://ika81-massage-bali.netlify.app" />
 <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=80" />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="canonical" href="https://ikamassage.com" />
+<link rel="canonical" href="https://ika81-massage-bali.netlify.app" />
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -95,6 +95,12 @@ html[lang="id"] [data-lang="id"].grid { display: grid; }
       </div>
 
       <div class="flex items-center gap-3">
+        <!-- Hamburger -->
+        <button id="hamburger-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg text-dark/60 hover:text-teal hover:bg-teal/5 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
         <div class="flex rounded-lg border border-teal/20 overflow-hidden" role="group" aria-label="Language toggle">
           <button onclick="setLang('en')" id="lang-en" class="lang-btn active px-3 py-1.5 text-xs font-semibold uppercase tracking-wider" aria-pressed="true">EN</button>
           <button onclick="setLang('id')" id="lang-id" class="lang-btn px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-dark/60" aria-pressed="false">ID</button>
@@ -108,6 +114,25 @@ html[lang="id"] [data-lang="id"].grid { display: grid; }
     </div>
   </div>
 </nav>
+
+<!-- Mobile menu drawer -->
+<div id="mobile-menu" class="md:hidden hidden fixed inset-x-0 top-16 z-40 bg-white/95 nav-blur border-b border-teal/10 shadow-lg">
+  <div class="px-4 py-6 space-y-4">
+    <a href="#why-us" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="en" onclick="toggleMobileMenu()">Why Us</a>
+    <a href="#why-us" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="id" onclick="toggleMobileMenu()">Mengapa Kami</a>
+    <a href="#services" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="en" onclick="toggleMobileMenu()">Services</a>
+    <a href="#services" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="id" onclick="toggleMobileMenu()">Layanan</a>
+    <a href="#areas" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="en" onclick="toggleMobileMenu()">Areas</a>
+    <a href="#areas" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="id" onclick="toggleMobileMenu()">Area</a>
+    <a href="#contact" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="en" onclick="toggleMobileMenu()">Contact</a>
+    <a href="#contact" class="block py-3 px-4 rounded-lg text-dark/70 hover:text-teal hover:bg-teal/5 transition-colors font-medium" data-lang="id" onclick="toggleMobileMenu()">Kontak</a>
+    <a href="https://wa.me/6281234567890?text=Hi%20Bali%20Massage%2C%20I%20want%20to%20book%20a%20massage" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 w-full py-3 rounded-full bg-emerald text-white font-semibold" onclick="toggleMobileMenu()">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span data-lang="en">Book via WhatsApp</span>
+      <span data-lang="id">Pesan via WhatsApp</span>
+    </a>
+  </div>
+</div>
 
 <main>
 <!-- ===== HERO ===== -->
@@ -166,8 +191,8 @@ html[lang="id"] [data-lang="id"].grid { display: grid; }
   <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-teal/10 rounded-2xl overflow-hidden shadow-lg">
     <div class="bg-white/95 backdrop-blur-sm px-4 py-6 text-center">
       <span class="text-3xl font-bold text-teal">100+</span>
-      <p class="text-sm text-dark/60 mt-1 font-medium" data-lang="en">Certified Therapists</p>
-      <p class="text-sm text-dark/60 mt-1 font-medium" data-lang="id">Terapis Bersertifikat</p>
+      <p class="text-sm text-dark/60 mt-1 font-medium" data-lang="en">Professional Therapists</p>
+      <p class="text-sm text-dark/60 mt-1 font-medium" data-lang="id">Terapis Profesional</p>
     </div>
     <div class="bg-white/95 backdrop-blur-sm px-4 py-6 text-center">
       <span class="text-3xl font-bold text-teal">24/7</span>
@@ -344,12 +369,12 @@ html[lang="id"] [data-lang="id"].grid { display: grid; }
         <a href="https://wa.me/6281234567890?text=Hi%20Bali%20Massage%2C%20Saya%20ingin%20pesan%20Lulur%20Badan%20(300K)" target="_blank" rel="noopener" class="block w-full py-3.5 text-center text-sm font-semibold bg-teal text-white hover:bg-teal-light transition-colors" data-lang="id">Pesan Sekarang</a>
       </div>
 
-      <!-- Body Scrub (duplicate row 2) -->
+      <!-- Reflexology -->
       <div class="gs_stagger service-card rounded-2xl bg-cream border border-teal/10 overflow-hidden group">
         <div class="p-6 lg:p-8">
           <div class="flex items-center justify-between mb-6">
             <div class="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center group-hover:bg-teal/20 transition-colors">
-              <svg class="w-6 h-6 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              <svg class="w-6 h-6 text-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 3a3 3 0 00-3 3c0 2 .5 3 1.5 4 .5.5.5 2 0 3s-2 2-3 3.5C2.5 18 2 19 2 20c0 1 2 2 4 2h12c2 0 4-1 4-2 0-1-.5-2-1.5-3.5-1-1.5-2-2.5-3-3.5s-.5-2.5 0-3c1-1 1.5-2 1.5-4a3 3 0 00-3-3c-2 0-3 1-4 2S10 3 8 3z"/><circle cx="9" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/></svg>
             </div>
             <span class="text-2xl font-bold text-teal font-serif">350K</span>
           </div>
@@ -409,8 +434,8 @@ html[lang="id"] [data-lang="id"].grid { display: grid; }
       <span class="text-gold font-semibold text-sm uppercase tracking-[0.2em]" data-lang="id">Area Layanan</span>
       <h2 class="gs_reveal font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3" data-lang="en">We Come to <span class="text-gold">You</span></h2>
       <h2 class="gs_reveal font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3" data-lang="id">Kami Datang ke <span class="text-gold">Anda</span></h2>
-      <p class="gs_reveal mt-4 text-cream/70 text-lg" data-lang="en">Wherever you are in Bali, our therapists are ready to serve you within minutes.</p>
-      <p class="gs_reveal mt-4 text-cream/70 text-lg" data-lang="id">Di mana pun Anda berada di Bali, terapis kami siap melayani dalam hitungan menit.</p>
+      <p class="gs_reveal mt-4 text-cream/70 text-lg" data-lang="en">Wherever you are in Bali, our therapists are ready to serve you within 30-60 minutes depending on your location.</p>
+      <p class="gs_reveal mt-4 text-cream/70 text-lg" data-lang="id">Di mana pun Anda berada di Bali, terapis kami siap melayani dalam 30-60 menit tergantung lokasi Anda.</p>
     </div>
 
     <div class="gs_reveal max-w-3xl mx-auto">
@@ -608,6 +633,21 @@ html[lang="id"] [data-lang="id"].grid { display: grid; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 <script>
+// ===== MOBILE MENU =====
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.getElementById('hamburger-btn');
+  const icon = document.getElementById('hamburger-icon');
+  const isOpen = !menu.classList.contains('hidden');
+  menu.classList.toggle('hidden');
+  btn.setAttribute('aria-expanded', String(!isOpen));
+  if (isOpen) {
+    icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+  } else {
+    icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+  }
+}
+
 // ===== LANGUAGE TOGGLE =====
 function setLang(lang) {
   document.documentElement.lang = lang === 'id' ? 'id' : 'en';
